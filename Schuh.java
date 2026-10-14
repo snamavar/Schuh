@@ -5,6 +5,20 @@ public class Schuh
     private boolean wasserdicht;
     
     
+public void setMarke(String neuMarke)
+{
+    marke=neuMarke;
+}
+
+public void setGeroesse(int  neuGeroesse)
+{
+    geroesse= neuGeroesse;
+}    
+    
+public void setWasserdicht(boolean neuWasserdicht)
+{
+    wasserdicht = neuWasserdicht;
+}
 public String getMarke()
 {
     return marke;
