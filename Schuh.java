@@ -35,7 +35,16 @@ public void setMarke(String neuMarke)
 
 public void setGeroesse(int  neuGeroesse)
 {
-    geroesse= neuGeroesse;
+
+        if ((neuGeroesse>=30) && (neuGeroesse<=50))
+        {
+            geroesse = neuGeroesse;
+        }
+        else
+        {
+            System.out.println("Fehler: ungültige Geroesse!");
+            geroesse = 40;
+        }
 }    
     
 public void setWasserdicht(boolean neuWasserdicht)
