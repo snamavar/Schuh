@@ -4,21 +4,21 @@ public class Schuh
     private int geroesse;
     private boolean wasserdicht;
     
-public Schuh(String neuMarke, int neuGeroesse, boolean neuWasserdicht)
+public Schuh(String marke, int geroesse, boolean wasserdicht)
 {
-    setMarke(neuMarke);
-    setGeroesse(neuGeroesse);
-    setWasserdicht(neuWasserdicht);
+    setMarke(marke);
+    setGeroesse(geroesse);
+    setWasserdicht(wasserdicht);
 }    
-public Schuh(String neuMarke,int neuGeroesse)
+public Schuh(String marke,int geroesse)
 {
-    setMarke(neuMarke);
-    setGeroesse(neuGeroesse);
+    setMarke(marke);
+    setGeroesse(geroesse);
     setWasserdicht(false);
 }
-    public Schuh(String neuMarke)
+    public Schuh(String marke)
 {
-    setMarke(neuMarke);
+    setMarke(marke);
     setGeroesse(42);
     setWasserdicht(false);
 }
@@ -28,28 +28,28 @@ public Schuh(String neuMarke,int neuGeroesse)
     setGeroesse(41);
     setWasserdicht(false);
 }
-public void setMarke(String neuMarke)
+public void setMarke(String marke)
 {
-    marke=neuMarke;
+    this.marke=marke;
 }
 
-public void setGeroesse(int  neuGeroesse)
+public void setGeroesse(int  geroesse)
 {
 
-        if ((neuGeroesse>=30) && (neuGeroesse<=50))
+        if ((geroesse>=30) && (geroesse<=50))
         {
-            geroesse = neuGeroesse;
+            this.geroesse = geroesse;
         }
         else
         {
             System.out.println("Fehler: ungültige Geroesse!");
-            geroesse = 40;
+            this.geroesse = 40;
         }
 }    
     
-public void setWasserdicht(boolean neuWasserdicht)
+public void setWasserdicht(boolean wasserdicht)
 {
-    wasserdicht = neuWasserdicht;
+    this.wasserdicht = wasserdicht;
 }
 public String getMarke()
 {
