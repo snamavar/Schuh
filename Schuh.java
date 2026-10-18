@@ -64,4 +64,20 @@ public boolean getWasserdicht()
 {
     return wasserdicht;
 }
+/*public void teste()
+{
+    system.out.println(marke.lenght());
+}*/
+
+public void printSchuh()
+{
+    if (wasserdicht == true)
+    {
+        System.out.println(marke + " Schuh: " + geroesse + " - Wasserdicht");
+    }
+    else
+    {
+        System.out.println(marke + " Schuh: " + geroesse + " - nicht Wasserdicht");
+    }
+}
 }
